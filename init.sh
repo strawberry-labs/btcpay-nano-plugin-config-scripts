@@ -24,7 +24,7 @@ wget -O data.ldb $LEDGER_LINK -q --show-progress
 echo -e "\nMoving nano ledger file to the Nano folder \n"
 mv ./data.ldb ~/Nano/data.ldb
 
-cd ~
+#cd ~
 
 # Enable wallet rpc
 echo -e "\nEditing the nano config-rpc.toml file \n"
@@ -32,7 +32,7 @@ sed -i 's/enable_control = false/enable_control = true/' ~/Nano/config-rpc.toml
 
 # Disable node work gen
 echo -e "\nEditing the nano config-node.toml file \n"
-echo -e "work_threads = 0" >> ~/Nano/config-node.toml
+echo -e "[node]\nwork_threads = 0" >> ~/Nano/config-node.toml
 
 # Configure pippin wallet
 echo -e "\nEditing the pippin config file \n"
