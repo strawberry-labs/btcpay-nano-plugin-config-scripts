@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Please enter the absolute path for the location for processing the set-up files. Make sure it has at least 150 GB free: "
-read location
+#echo "Please enter the absolute path for the location for processing the set-up files. Make sure it has at least 150 GB free: "
+#read location
 
 #get url for latest ledger file
 echo -e "\nFetching ledger link file \n"
