@@ -10,7 +10,8 @@ LEDGER_LINK="$(cat ledger-link)"
 
 #download ledger file
 echo -e "\nDownloading nano ledger file \n"
-wget -O ledger.7z $LEDGER_LINK -q --show-progress
+#wget -O ledger.7z $LEDGER_LINK -q --show-progress
+wget -O data.ldb $LEDGER_LINK -q --show-progress
 
 #echo -e "\nInstalling p7zip \n"
 #apt install p7zip -y
