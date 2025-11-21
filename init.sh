@@ -42,7 +42,7 @@ sed -i \
   -e 's/node_ws_url: *""/node_ws_url: "ws:\/\/btcpayserver_nano_node:7078"/' \
   -e 's/work_peers: *\[\]/work_peers: ["https:\/\/uk1.public.xnopay.com\/proxy"]/' \
   -e 's/receive_minimum: "1000000000000000000000000"/receive_minimum: "1"/' \
-  -e 's/work_timeout: "30"/work_timeout: "120"/' \
+  -e 's/work_timeout: 30/work_timeout: 120/' \
   ~/PippinData/config.yaml
  
 echo -e "\nRestarting nano node and pippin \n"
